@@ -1,0 +1,4 @@
+Error in line 11: D2 1N4148 12
+Error in line 12: R1 2k 31 32
+Error in line 13: C3 1n 33 33
+Warning, unconnected node(s): 3, 4
