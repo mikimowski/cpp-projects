@@ -1,0 +1,6 @@
+strsetconst init invoked
+strset_new()
+strset_new: set 0 created
+strset_insert(0, "42")
+strset_insert: set 0, element "42" inserted
+strsetconst init finished

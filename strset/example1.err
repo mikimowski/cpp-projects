@@ -1,0 +1,116 @@
+strset_new()
+strset_new: set 0 created
+strset_insert(0, "foo")
+strsetconst init invoked
+strset_new()
+strset_new: set 1 created
+strset_insert(1, "42")
+strset_insert: set 1, element "42" inserted
+strsetconst init finished
+strset_insert: set 0, element "foo" inserted
+strset_test(0, "foo")
+strset_test: set 0 contains the element "foo"
+strset_test(0, "bar")
+strset_test: set 0 does not contain the element "bar"
+strset_insert(0, "bar")
+strset_insert: set 0, element "bar" inserted
+strset_test(0, "bar")
+strset_test: set 0 contains the element "bar"
+strset_size(0)
+strset_size: set 0 contains 2 element(s)
+strset_insert(0, "bar")
+strset_insert: set 0, element "bar" was already present
+strset_size(0)
+strset_size: set 0 contains 2 element(s)
+strset_remove(0, "foo")
+strset_remove: set 0, element "foo" removed
+strset_test(0, "foo")
+strset_test: set 0 does not contain the element "foo"
+strset_test(0, "bar")
+strset_test: set 0 contains the element "bar"
+strset_size(0)
+strset_size: set 0 contains 1 element(s)
+strset_delete(0)
+strset_delete: set 0 deleted
+strset_insert(0, "whatever")
+strset_insert: set 0 does not exist
+strset_size(0)
+strset_size: set 0 does not exist
+strset_test(0, "whatever")
+strset_test: set 0 does not exist
+strset_new()
+strset_new: set 2 created
+strset_new()
+strset_new: set 3 created
+strset_insert(2, "Ania")
+strset_insert: set 2, element "Ania" inserted
+strset_insert(2, "Alek")
+strset_insert: set 2, element "Alek" inserted
+strset_insert(2, "Maria")
+strset_insert: set 2, element "Maria" inserted
+strset_insert(2, "Fiona")
+strset_insert: set 2, element "Fiona" inserted
+strset_insert(3, "Ania")
+strset_insert: set 3, element "Ania" inserted
+strset_insert(3, "Maria")
+strset_insert: set 3, element "Maria" inserted
+strset_comp(2, 3)
+strset_comp: result of comparing set 2 to set 3 is -1
+strset_comp(3, 2)
+strset_comp: result of comparing set 3 to set 2 is 1
+strset_remove(2, "Alek")
+strset_remove: set 2, element "Alek" removed
+strset_remove(2, "Fiona")
+strset_remove: set 2, element "Fiona" removed
+strset_remove(2, "Olek")
+strset_remove: set 2 does not contain the element "Olek"
+strset_comp(3, 2)
+strset_comp: result of comparing set 3 to set 2 is 0
+strset_clear(3)
+strset_clear: set 3 cleared
+strset_comp(2, 3)
+strset_comp: result of comparing set 2 to set 3 is 1
+strset_clear(2)
+strset_clear: set 2 cleared
+strset_comp(2, 3)
+strset_comp: result of comparing set 2 to set 3 is 0
+strset_delete(2)
+strset_delete: set 2 deleted
+strset_delete(3)
+strset_delete: set 3 deleted
+strset_comp(2, 3)
+strset_comp: result of comparing set 2 to set 3 is 0
+strset_comp: set 2 does not exist
+strset_comp: set 3 does not exist
+strset_size(1)
+strset_size: the 42 Set contains 1 element(s)
+strset_delete(1)
+strset_delete: attempt to remove the 42 Set
+strset_insert(1, "66")
+strset_insert: attempt to insert into the 42 Set
+strset_size(1)
+strset_size: the 42 Set contains 1 element(s)
+strset_insert(1, "24")
+strset_insert: attempt to insert into the 42 Set
+strset_insert(1, "42")
+strset_insert: attempt to insert into the 42 Set
+strset_test(1, "24")
+strset_test: the 42 Set does not contain the element "24"
+strset_test(1, "42")
+strset_test: the 42 Set contains the element "42"
+strset_remove(1, "42")
+strset_remove: attempt to remove from the 42 Set
+strset_size(1)
+strset_size: the 42 Set contains 1 element(s)
+strset_clear(1)
+strset_clear: attempt to clear the 42 Set
+strset_size(1)
+strset_size: the 42 Set contains 1 element(s)
+strset_comp(1, 1)
+strset_comp: result of comparing the 42 Set to the 42 Set is 0
+strset_comp(1, 666)
+strset_comp: result of comparing the 42 Set to set 666 is 1
+strset_comp: set 666 does not exist
+strset_comp(666, 1)
+strset_comp: result of comparing set 666 to the 42 Set is -1
+strset_comp: set 666 does not exist

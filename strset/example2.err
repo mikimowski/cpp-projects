@@ -1,0 +1,18 @@
+strset_new()
+strset_new: set 0 created
+strset_insert(0, "testowy")
+strsetconst init invoked
+strset_new()
+strset_new: set 1 created
+strset_insert(1, "42")
+strset_insert: set 1, element "42" inserted
+strsetconst init finished
+strset_insert: set 0, element "testowy" inserted
+strset_insert(0, NULL)
+strset_insert: invalid value (NULL)
+strset_test(0, "testowy")
+strset_test: set 0 contains the element "testowy"
+strset_test(0, "nietestowy")
+strset_test: set 0 does not contain the element "nietestowy"
+strset_delete(0)
+strset_delete: set 0 deleted
